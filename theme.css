@@ -1,0 +1,75 @@
+.theme-dark {
+  /* Palette blend: Gruvbox warmth + Everforest softness */
+  --background-primary: #2d353b;
+  --background-secondary: #32302f;
+  --background-modifier-border: #444444;
+  --background-modifier-form-field: #3c3836;
+  
+  --text-normal: #d3c6aa;
+  --text-muted: #9da9a0;
+  --text-accent: #e69875;      /* Everforest orange */
+  --text-accent-hover: #e67e80; /* Soft red */
+  
+  /* Syntax/highlighting colors */
+  --code-normal: #d3c6aa;
+  --code-comment: #7fbbb3;     /* Aqua */
+  --code-keyword: #e67e80;     /* Red */
+  --code-string: #a7c080;      /* Green */
+  --code-function: #dbbe7f;    /* Yellow */
+  --code-variable: #7fbbb3;    /* Blue/aqua */
+  
+  /* Interactive */
+  --interactive-normal: #444444;
+  --interactive-hover: #525252;
+  --interactive-accent: #a7c080;
+  --interactive-accent-hover: #83c092;
+  
+  /* Status indicators */
+  --text-error: #e67e80;
+  --text-warning: #dbbe7f;
+  --text-success: #a7c080;
+
+  --tag-background: #dbbe7f;
+  --tag-color: #2d353b;
+  --tag-background-hover: rgba(219, 190, 127, 0.22);
+  --tag-border-color: rgba(219, 190, 127, 0.35);
+}
+
+}
+/* Your sharp-corner base */
+.theme-dark body {
+  --radius-s: 0px;
+  --radius-m: 0px;
+  --radius-l: 0px;
+  --input-radius: 0px;
+  --tab-radius-active: 0px;
+}
+/* Headings with Gruvbox-inspired borders */
+.theme-dark h1,
+.theme-dark h2,
+.theme-dark h3 {
+  border-bottom: 2px solid var(--background-modifier-border);
+  padding-bottom: 0.25em;
+/* Links as Everforest blue-aqua */
+.theme-dark a {
+  color: #7fbbb3;
+}
+
+.theme-dark a:hover {
+  color: #a7c080;
+}
+
+/* Code blocks as statement boxes */
+.theme-dark pre code {
+  background: var(--background-secondary);
+  border: 1px solid var(--background-modifier-border);
+  color: var(--text-normal);
+}
+
+/* Blockquote style */
+.theme-dark blockquote {
+  border-left: 4px solid var(--text-accent);
+  background: var(--background-secondary);
+  margin: 1.5em 0;
+}
+
